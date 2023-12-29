@@ -1,0 +1,39 @@
+{
+  "name": "ticketsnote",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.vue,.json src/ --fix"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "date-diff": "^1.0.2",
+    "dateformat": "^5.0.3",
+    "firebase": "^10.7.1",
+    "lodash": "^4.17.21",
+    "vee-validate": "^3.4.15",
+    "vue": "^2.7.15",
+    "vue-material": "^1.0.0-beta-16",
+    "vue-recaptcha": "^2.0.3",
+    "vue-router": "^3.6.5",
+    "vue-scrollto": "^2.20.0",
+    "vuelidate": "^0.7.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^5.1.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "prettier": "3.1.1",
+    "sass": "^1.69.5",
+    "vite": "^5.0.8",
+    "vite-plugin-environment": "^1.1.3"
+  }
+}

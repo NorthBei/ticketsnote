@@ -1,0 +1,177 @@
+@import "./font";
+@import "./variables";
+@import "vue-material/src/components/MdLayout/variables";
+@import "vue-material/dist/theme/engine"; // Import the theme engine
+
+@include md-register-theme(
+  "default",
+  (
+    primary: #3d2e86,
+    // The primary color of your brand
+    accent: #448aff // The secondary color of your brand
+  )
+);
+
+@import "vue-material/dist/theme/all"; // Apply the theme
+
+/* -- Global Font Family --*/
+
+// Ref1: https://css-tricks.com/snippets/css/system-font-stack/
+// Ref2: https://www.oxxostudio.tw/articles/201811/css-font-family.html
+// Ref3: https://github.com/necolas/normalize.css/issues/665
+// Ref4: https://bitsofco.de/the-new-system-font-stack/
+// Defaulting to the system font of a particular operating system can boost performance because the browser doesn't have to download any font files
+body {
+  //原本的： font-family: Roboto, 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "微軟正黑體", "Microsoft JhengHei",
+    "Microsoft YaHei", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/*materil desing cutsomize part*/
+
+.mdc-max-content-wrapper,
+.md-layout.mdc-max-content-wrapper {
+  max-width: $content_max_width;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: $content_max_width) {
+  .mdc-max-content-wrapper,
+  .md-layout.mdc-max-content-wrapper {
+    padding: 0 10%;
+  }
+}
+/* ---Typography--- */
+
+//h1,h3,h5,p
+.mdc-text-lv1,
+.mdc-text-lv3,
+.mdc-text-lv5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.mdc-text-lv1 {
+  // font-size: 3.125rem;
+  font-size: 2.3rem;
+}
+
+.mdc-text-lv3 {
+  font-size: 2.1875rem;
+}
+
+.mdc-text-lv5 {
+  font-size: 1.5625rem;
+}
+
+.mdc-text-p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.mdc-text-p.mb1 {
+  margin-bottom: 1rem;
+}
+
+.mdc-text-center {
+  text-align: center;
+}
+
+/* ---Display--- */
+
+.mdc-d-flex {
+  display: flex;
+}
+
+.mdc-d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.mdc-d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---Margin--- */
+
+.mdc-mh-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mdc-mh-1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mdc-mh-2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mdc-mt-1 {
+  margin-top: 10px;
+}
+
+.mdc-ml-1 {
+  margin-left: 10px;
+}
+
+.mdc-mb-1 {
+  margin-bottom: 10px;
+}
+
+/* ---RWD--- */
+
+/* small */
+
+// max-width
+@media screen and (max-width: $md-breakpoint-small) {
+  .mdc-small-flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .mdc-small-text-center {
+    text-align: center;
+  }
+
+  .mdc-small-mt-3 {
+    margin-top: 30px;
+  }
+
+  .mdc-small-mb-3 {
+    margin-bottom: 30px;
+  }
+}
+
+/* xsmall */
+
+// max-width
+@media screen and (max-width: $md-breakpoint-xsmall) {
+  .mdc-xsmall-mt-3 {
+    margin-top: 30px;
+  }
+}
+
+// min-width
+@media screen and (min-width: $md-breakpoint-xsmall) {
+  .mdc-xsmall-above-d-none {
+    display: none;
+  }
+}
+
+/* ---SIZE--- */
+
+.mdc-w-100 {
+  width: 100%;
+}
