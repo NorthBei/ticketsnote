@@ -2,11 +2,13 @@ require('dotenv-flow/config');
 const { onCall } = require('firebase-functions/v2/https');
 const { initializeApp } = require('firebase-admin/app');
 const { getFirestore, FieldValue } = require('firebase-admin/firestore');
+const { setGlobalOptions } = require('firebase-functions/v2');
 
 const jwt = require('./src/jwt');
 const mail = require('./src/mail/sendgrid');
 
 initializeApp();
+setGlobalOptions({ maxInstances: 10 });
 
 const db = getFirestore();
 
