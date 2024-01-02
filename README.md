@@ -153,6 +153,13 @@ Rename the `/functions/.env.local.example` to `.env.local`, and get the env var 
 
 ### Getting Started
 
+Install packages & Run the firebase emulator:
+
+```zsh
+npm run install
+npm run serve
+```
+
 ### Project setup
 
 Install all packages
