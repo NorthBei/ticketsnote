@@ -43,6 +43,8 @@
 |-|-|
 |![ticketsnote web app_edit](https://github.com/NorthBei/ticketsnote/assets/15665709/1b12b334-5210-43a8-8b4f-d5e1516e5aea)|![ticketsnote web app_edit(Pixel 7) (1)](https://github.com/NorthBei/ticketsnote/assets/15665709/ebed1799-6a01-4ec0-84b7-75f505cc5643)|
 
+**Email**
+![mail google com_mail_u_0_](https://github.com/NorthBei/ticketsnote/assets/15665709/b9e50402-e358-4b11-ba6a-32a8d3413ffe)
 
 ## Development Instruction - Website
 
